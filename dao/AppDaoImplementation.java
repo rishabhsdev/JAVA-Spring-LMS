@@ -47,26 +47,26 @@ public class AppDaoImplementation implements AppDAO {
         return instructor.getResultList().get(0);
     }
 
-    // @Override
-    // public List<Student> findAll() {
-    // TypedQuery<Student> query = entityManager.createQuery("FROM Student",
+    @Override
+    public List<Student> findAll() {
+    TypedQuery<Student> query = entityManager.createQuery("FROM Student",
+    Student.class);
+    return query.getResultList();
+
+    }
+
+    @Override
+    @Transactional
+    public void updateStudent(int id) {
+    Student student = entityManager.find(Student.class, id);
+    student.setFirstName("New name");
+    entityManager.merge(student);
+
+    // Query query = entityManager.createQuery("UPDATE Student SET
+    // lastName='lastname' WHERE id=:id",
     // Student.class);
-    // return query.getResultList();
-
-    // }
-
-    // @Override
-    // @Transactional
-    // public void updateStudent(int id) {
-    // Student student = entityManager.find(Student.class, id);
-    // student.setFirstName("New name");
-    // entityManager.merge(student);
-
-    // // Query query = entityManager.createQuery("UPDATE Student SET
-    // // lastName='lastname' WHERE id=:id",
-    // // Student.class);
-    // // query.setParameter("id", id);
-    // // query.executeUpdate();
-    // }
+    // query.setParameter("id", id);
+    // query.executeUpdate();
+    }
 
 }
