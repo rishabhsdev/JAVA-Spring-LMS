@@ -1,7 +1,10 @@
 # University Management System using JAVA, Spring & Hibernate.
 
-
-Allows you to add Instructors, Courses, Review for each course, and Students.
+**Features**
+* Add Instructors
+* Add Courses
+* Add Review for each course
+* Add Students
 
 Uses Jakarta Persistence API to add details to the database.
 
