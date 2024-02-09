@@ -13,7 +13,5 @@ Project is in active development.
 
 ![image](https://github.com/rishabhsdev/JAVA-Spring-LMS/assets/56164824/dbf339fd-73d3-40af-9093-8986d1da0556)
 
-
-![image](https://github.com/rishabhsdev/JAVA-Spring-LMS/assets/56164824/86a2c86f-dca5-4c70-bdb9-f23e95bdb227)
-
+![image](https://github.com/rishabhsdev/JAVA-Spring-LMS/assets/56164824/89bb5c37-5ae3-4fc7-9842-f5882f6fd0f6)
 
